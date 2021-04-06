@@ -53,14 +53,14 @@ public class M_01_03_01 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //m-01-03-02 activity start
-                Intent intent = new Intent(getApplicationContext(), );
+                Intent intent = new Intent(getApplicationContext(), M_01_03_02.class);
             }
         });
         text_m_01_03_01_find_pw.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //m-01-03-05 activity start
-                Intent intent = new Intent(getApplicationContext(), );
+                //Intent intent = new Intent(getApplicationContext(), );
             }
         });
 
@@ -68,7 +68,7 @@ public class M_01_03_01 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //m-01-02-01 activity start
-                Intent intent = new Intent(getApplicationContext(), );
+                //Intent intent = new Intent(getApplicationContext(), );
             }
         });
     }
