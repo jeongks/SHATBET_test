@@ -69,7 +69,8 @@ public class M_01_03_01 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //m-01-02-01 activity start
-                //Intent intent = new Intent(getApplicationContext(), );
+                Intent intent = new Intent(getApplicationContext(), M_01_02_01.class );
+                startActivity(intent);
             }
         });
     }

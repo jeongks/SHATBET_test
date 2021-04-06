@@ -37,6 +37,7 @@
         android:layout_marginTop="10dp"
         android:layout_gravity="center"
         android:padding="10dp"
+        android:inputType="text"
         android:hint="성명"/>
     <EditText
         android:id="@+id/edit_m_01_02_01_Phone_Num"
@@ -46,6 +47,7 @@
         android:layout_marginTop="10dp"
         android:layout_gravity="center"
         android:padding="10dp"
+        android:inputType="phone"
         android:hint="휴대폰번호" />
 
     <Button
