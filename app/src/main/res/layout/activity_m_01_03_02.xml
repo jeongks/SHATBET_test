@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".M_01_03_02">
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -30,12 +29,13 @@
             android:gravity="center"/>
     </LinearLayout>
     <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tab_m_01_03_02"
+        android:id="@+id/tabs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <androidx.viewpager.widget.ViewPager
-        android:id="@+id/viewpager_m_01_03_02"
+        android:id="@+id/view_pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
+
 
 </LinearLayout>
