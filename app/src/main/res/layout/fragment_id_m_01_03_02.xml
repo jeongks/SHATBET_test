@@ -41,8 +41,7 @@
         android:background="@drawable/button_shape_m_01_03_01_login"
         android:enabled="false"
         android:minWidth="380dp"
-        android:text="아이디 찾기"
-        app:backgroundTint="#bbbbbb" />
+        android:text="아이디 찾기"/>
 
 
 </FrameLayout>

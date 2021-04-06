@@ -24,7 +24,7 @@ public class M_01_03_01 extends AppCompatActivity {
         text_m_01_03_01_find_pw = (TextView)findViewById(R.id.text_m_01_03_01_find_pw);
         edit_m_01_03_01_id = (EditText)findViewById(R.id.edit_m_01_03_01_id);
         edit_m_01_03_01_pw = (EditText)findViewById(R.id.edit_m_01_03_01_pw);
-        btn_m_01_03_01_login = (Button)findViewById(R.id.btn_m_01_01_01_login);
+        btn_m_01_03_01_login = (Button)findViewById(R.id.btn_m_01_03_01_login);
         btn_m_01_03_01_join = (Button)findViewById(R.id.btn_m_01_03_01_join);
 
         text_m_01_03_01_exit.setOnClickListener(new View.OnClickListener() {
@@ -54,6 +54,7 @@ public class M_01_03_01 extends AppCompatActivity {
             public void onClick(View v) {
                 //m-01-03-02 activity start
                 Intent intent = new Intent(getApplicationContext(), M_01_03_02.class);
+                startActivity(intent);
             }
         });
         text_m_01_03_01_find_pw.setOnClickListener(new View.OnClickListener() {
