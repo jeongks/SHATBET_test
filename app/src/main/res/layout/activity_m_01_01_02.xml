@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".M_01_01_02">
+
+    <TextView
+        android:id="@+id/text_head_m_01_01_02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SHAHBET"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:background="#0070c0"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/text_m_01_01_02_hi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="a"
+            app:layout_constraintTop_toBottomOf="@+id/text_head_m_01_01_02"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <LinearLayout
+                android:id="@+id/group_m_01_01_02_market_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="40dp"
+                android:gravity="center">
+                <ImageButton
+                    android:id="@+id/imgBtn_m_01_01_02_market_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_m_01_01_02_market_price_50"
+                    android:background="@color/transparent"/>
+                <TextView
+                    android:id="@+id/text_m_01_01_02_market_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="시가"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/group_m_01_01_02_closing_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginRight="40dp"
+                android:orientation="vertical">
+                <ImageButton
+                    android:id="@+id/imgBtn_m_01_01_02_closing_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_m_01_01_02_closing_price_50"
+                    android:background="@color/transparent"/>
+                <TextView
+                    android:id="@+id/text_m_01_01_02_closing_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="종가"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/group_m_01_01_02_high_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginRight="40dp"
+                android:orientation="vertical">
+                <ImageButton
+                    android:id="@+id/imgBtn_m_01_01_02_high_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_m_01_01_02_high_price_50"
+                    android:background="@color/transparent"/>
+                <TextView
+                    android:id="@+id/text_m_01_01_02_high_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="고가"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/group_m_01_01_02_low_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageButton
+                    android:id="@+id/imgBtn_m_01_01_02_low_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_m_01_01_02_low_price_50"
+                    android:background="@color/transparent"/>
+                <TextView
+                    android:id="@+id/text_m_01_01_02_low_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="저가"/>
+            </LinearLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

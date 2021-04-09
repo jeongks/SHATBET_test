@@ -8,4 +8,12 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="transparent">#00000000</color>
+    <color name="market_price">#FFFFE699</color>
+    <color name="background_market_price">#FFFFF8E5</color>
+    <color name="closing_price">#FFC5E0B4</color>
+    <color name="background_closing_price">#FFF0F7EC</color>
+    <color name="high_price">#FF9DC3E6</color>
+    <color name="background_high_price">#FFEEF5FB</color>
+    <color name="low_price">#FFD1B2E8</color>
+    <color name="background_low_price">#FFF0EAF5</color>
 </resources>
