@@ -5,14 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".M_01_02_02">
-
+    tools:context=".M_01_02_03">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <TextView
-            android:id="@+id/text_m_01_02_02_finish"
+            android:id="@+id/text_m_01_02_03_finish"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="X"
@@ -27,48 +26,46 @@
             android:text="휴대폰 번호 인증"
             android:textSize="25sp"/>
     </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="380dp"
+    <EditText
+        android:id="@+id/edit_m_01_02_03_id"
+        android:layout_width="wrap_content"
+        android:minWidth="380dp"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="10dp"
-        android:layout_marginTop="20dp"
-        android:paddingHorizontal="20dp"
         android:paddingVertical="10dp"
-        android:orientation="horizontal"
-        android:background="@drawable/back_underborder_grey">
-        <EditText
-            android:id="@+id/edit_m_01_02_02_verify_number"
-            android:layout_width="wrap_content"
-            android:minWidth="270dp"
-            android:layout_height="wrap_content"
-            android:hint="xxxxxx"
-            android:background="@color/transparent"/>
-        <TextView
-            android:id="@+id/text_m_01_02_02_clear"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="x"/>
+        android:paddingHorizontal="20dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="30dp"
+        android:hint="아이디"/>
+    <EditText
+        android:id="@+id/edit_m_01_02_03_pw"
+        android:layout_width="wrap_content"
+        android:minWidth="380dp"
+        android:layout_height="wrap_content"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="10dp"
+        android:hint="비밀번호(10자~20자)"/>
+    <EditText
+        android:id="@+id/edit_m_01_02_03_pw_confirm"
+        android:layout_width="wrap_content"
+        android:minWidth="380dp"
+        android:layout_height="wrap_content"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="10dp"
+        android:hint="비밀번호 재입력"/>
 
-        <TextView
-            android:id="@+id/text_m_01_02_02_timer"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:text="02:59" />
-
-
-    </LinearLayout>
     <Button
-        android:id="@+id/button_m_01_02_02_verify"
-        android:layout_width="380dp"
+        android:id="@+id/btn_m_01_02_03_save"
+        android:layout_width="wrap_content"
+        android:minWidth="380dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="10dp"
         android:layout_marginTop="70dp"
-        android:text="인증 완료"
-        android:textSize="15sp"
-        android:background="@drawable/button_shape_m_01_03_01_login"/>
-
-
+        android:background="@drawable/button_shape_m_01_03_01_login"
+        android:text="계정정보 입력 완료"
+        android:textSize="15sp"/>
 
 </LinearLayout>

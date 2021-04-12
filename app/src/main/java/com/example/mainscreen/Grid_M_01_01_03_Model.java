@@ -3,16 +3,16 @@ package com.example.mainscreen;
 public class Grid_M_01_01_03_Model {
     private String category;
     private String type;
-    private int brand_id;
-    private String brand_name;
+    private byte[] brandImg;
+    private String brandname;
     private String date;
     private String price;
 
-    public Grid_M_01_01_03_Model(String category, String type, int brand_id, String brand_name, String date, String price){
+    public Grid_M_01_01_03_Model(String category, String type,byte[] brandImg, String brandname, String date, String price){
         this.category = category;
         this.type = type;
-        this.brand_id = brand_id;
-        this.brand_name = brand_name;
+        this.brandImg = brandImg;
+        this.brandname = brandname;
         this.date = date;
         this.price = price;
     }
@@ -33,20 +33,20 @@ public class Grid_M_01_01_03_Model {
         this.type = type;
     }
 
-    public int getBrand_id() {
-        return brand_id;
+    public byte[] getBrandImg() {
+        return brandImg;
     }
 
-    public void setBrand_id(int brand_id) {
-        this.brand_id = brand_id;
+    public void setBrandImg(byte[] brandImg) {
+        this.brandImg = brandImg;
     }
 
-    public String getBrand_name() {
-        return brand_name;
+    public String getBrandname() {
+        return brandname;
     }
 
-    public void setBrand_name(String brand_name) {
-        this.brand_name = brand_name;
+    public void setBrandname(String brandname) {
+        this.brandname = brandname;
     }
 
     public String getDate() {

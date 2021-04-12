@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".M_01_02_04">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/text_m_01_02_04_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:textSize="20sp"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="휴대폰 번호 인증"
+            android:textSize="25sp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_m_01_02_04_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="80dp"
+        android:text="user name"
+        android:textColor="#0070c0"/>
+    <EditText
+        android:id="@+id/edit_m_01_02_04_username"
+        android:layout_width="wrap_content"
+        android:minWidth="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:text="홍길동"/>
+    <TextView
+        android:id="@+id/text_m_01_02_04_warning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이미 사용중인 이름입니다."
+        android:textColor="#f00"
+        android:layout_marginHorizontal="15dp"
+        android:visibility="invisible"/>
+    <Button
+        android:id="@+id/btn_m_01_02_04_save"
+        android:layout_width="wrap_content"
+        android:minWidth="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:text="계정정보 입력 완료"
+        android:background="@drawable/button_shape_m_01_03_01_login"
+        android:enabled="false"/>
+
+
+
+</LinearLayout>

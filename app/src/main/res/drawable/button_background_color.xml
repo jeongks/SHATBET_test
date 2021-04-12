@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:color="#0070c0" />
     <!--When Button is not enabled -->
     <item android:state_enabled="false" android:color="#bfbfbf" />
+    <item android:state_enabled="true" android:color="#0070c0"/>
     <!--When Button is in pressed state -->
     <item android:state_pressed="true" android:color="#0050c0" />
     <!--When Button is in selected state -->
     <item android:state_selected="true" android:color="#0090c0" />
     <!--Default Background Color -->
-    <item android:color="#0070c0" />
+
 </selector>
