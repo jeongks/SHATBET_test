@@ -2,11 +2,15 @@ package com.example.mainscreen;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -66,7 +70,7 @@ public class M_01_02_05 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 CompletedJoinDialog dialog = new CompletedJoinDialog(M_01_02_05.this);
-                dialog.getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE,R.layout.custom_completed_join_title);
+                dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
                 dialog.show();
             }
         });

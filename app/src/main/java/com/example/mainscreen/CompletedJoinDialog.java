@@ -29,7 +29,6 @@ public class CompletedJoinDialog extends Dialog {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_CUSTOM_TITLE);
         setContentView(R.layout.completed_join_dialog);
         confirm = (Button)findViewById(R.id.btn_confirm);
         confirm.setOnClickListener(new View.OnClickListener() {

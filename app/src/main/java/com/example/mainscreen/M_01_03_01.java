@@ -54,6 +54,7 @@ public class M_01_03_01 extends AppCompatActivity {
             public void onClick(View v) {
                 //m-01-03-02 activity start
                 Intent intent = new Intent(M_01_03_01.this, M_01_03_02.class);
+                intent.putExtra("tabIndex",0);
                 startActivity(intent);
             }
         });
@@ -61,7 +62,9 @@ public class M_01_03_01 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //m-01-03-05 activity start
-                //Intent intent = new Intent(getApplicationContext(), );
+                Intent intent = new Intent(getApplicationContext(), M_01_03_02.class);
+                intent.putExtra("tabIndex",1);
+                startActivity(intent);
             }
         });
 

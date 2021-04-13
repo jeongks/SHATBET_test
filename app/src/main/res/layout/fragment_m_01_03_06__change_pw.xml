@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".M_01_03_06_Fragment_change_pw">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal"
+        android:background="@drawable/back_underborder_grey">
+        <EditText
+            android:id="@+id/edit_m_01_03_06_reset_pw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="15dp"
+            android:inputType="textPassword"
+            android:hint="비밀번호 (10~20자)"
+            android:background="@color/transparent"/>
+        <Button
+            android:id="@+id/btn_m_01_03_06_delete_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_icon_delete"
+            android:scaleY="0.3"
+            android:scaleX="0.3"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/text_m_01_03_06_pw_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginHorizontal="10dp"
+        android:text="비밀번호를 한,여,특수문자를 혼용하여 10-20자로 입력해주세요."
+        android:textSize="10sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="200dp"
+        android:paddingLeft="15dp"
+        android:orientation="horizontal"
+        android:background="@drawable/back_underborder_grey">
+        <EditText
+            android:id="@+id/edit_m_01_03_06_confirm_pw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="textPassword"
+            android:hint="비밀번호 (10~20자)"
+            android:background="@color/transparent"/>
+        <Button
+            android:id="@+id/btn_m_01_03_06_delete_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_icon_delete"
+            android:scaleY="0.3"
+            android:scaleX="0.3"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/text_m_01_03_06_pw_confirm_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="250dp"
+        android:text="재입력 비밀번호가 일치하지 않습니다."
+        android:textSize="10sp"
+        android:textColor="#f00"
+        android:visibility="invisible"/>
+    <Button
+        android:id="@+id/btn_m_01_03_06_change_complete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="300dp"
+        android:enabled="false"
+        android:text="변경 완료"
+        android:background="@drawable/button_shape_m_01_03_01_login"
+        app:backgroundTint="@null"/>
+
+</FrameLayout>
