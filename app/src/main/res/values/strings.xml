@@ -10,4 +10,8 @@
     <string name="tab_m_01_01_03_priceInfo">주가정보</string>
     <string name="tab_m_01_01_03_charge">충전하기</string>
     <string name="tab_m_01_01_03_exchange">선물교환</string>
+    <string name="tab_m_02_01_game_market">시가</string>
+    <string name="tab_m_02_01_game_closing">종가</string>
+    <string name="tab_m_02_01_game_high">고가</string>
+    <string name="tab_m_02_01_game_low">저가</string>
 </resources>

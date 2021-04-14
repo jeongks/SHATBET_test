@@ -5,23 +5,16 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.KeyboardShortcutGroup;
-import android.view.Menu;
 import android.view.View;
-import android.view.Window;
 import android.widget.Button;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 
-import java.util.List;
-
-public class CompletedJoinDialog extends Dialog {
+public class Found_ID_Dialog extends Dialog {
     public Activity activity;
-    public Dialog dialog;
     public Button confirm;
 
-    public CompletedJoinDialog(Activity activity) {
+    public Found_ID_Dialog(Activity activity) {
         super(activity);
         this.activity = activity;
     }
@@ -29,8 +22,8 @@ public class CompletedJoinDialog extends Dialog {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.completed_join_dialog);
-        confirm = (Button)findViewById(R.id.btn_confirm);
+        setContentView(R.layout.completed_find_id);
+        confirm = (Button)findViewById(R.id.btn_confirm_found_id);
         confirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -38,7 +31,6 @@ public class CompletedJoinDialog extends Dialog {
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                intent.putExtra("join",true);
                 activity.startActivity(intent);
             }
         });

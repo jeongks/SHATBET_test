@@ -8,11 +8,11 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-public class M_01_03_06_Fragment_Adapter extends FragmentPagerAdapter {
-    private static final int[] TAB_TITLES = new int[] {R.string.tab_m_02_01_game_market, R.string.tab_m_02_01_game_closing,R.string.tab_m_02_01_game_high,R.string.tab_m_02_01_game_low};
+public class M_02_01_01_Fragment_Adapter extends FragmentPagerAdapter {
+    private static final int[] TAB_TITLES = new int[] {};
     private final Context context;
 
-    public M_01_03_06_Fragment_Adapter(Context context, FragmentManager fm) {
+    public M_02_01_01_Fragment_Adapter(Context context, FragmentManager fm) {
         super(fm);
         this.context = context;
 
@@ -23,10 +23,16 @@ public class M_01_03_06_Fragment_Adapter extends FragmentPagerAdapter {
         Fragment fragment = null;
         switch (position){
             case 0:
-                fragment = new M_01_03_02_Fragment_Id();
+                fragment = new M_02_01_Game_Fragment_market_price();
                 break;
             case 1:
-                fragment = new M_01_03_06_Fragment_change_pw();
+                fragment = new M_02_01_Game_Fragment_closing_price();
+                break;
+            case 2:
+                fragment = new M_02_01_Game_Fragment_high_price();
+                break;
+            case 3:
+                fragment = new M_02_01_Game_Fragment_low_price();
                 break;
         }
         return fragment;
@@ -40,6 +46,6 @@ public class M_01_03_06_Fragment_Adapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 2;
+        return 4;
     }
 }

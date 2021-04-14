@@ -2,18 +2,13 @@ package com.example.mainscreen;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.AlertDialog;
-import android.app.Dialog;
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
-import android.content.DialogInterface;
-import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
-import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -69,7 +64,7 @@ public class M_01_02_05 extends AppCompatActivity {
         btn_m_01_02_05_save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                CompletedJoinDialog dialog = new CompletedJoinDialog(M_01_02_05.this);
+                Completed_Join_Dialog dialog = new Completed_Join_Dialog(M_01_02_05.this);
                 dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
                 dialog.show();
             }

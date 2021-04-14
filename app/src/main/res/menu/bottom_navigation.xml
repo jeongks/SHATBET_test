@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/market_price"
+        android:title="시가"/>
+    <item
+        android:id="@+id/closing_price"
+        android:title="종가"/>
+    <item
+        android:id="@+id/high_price"
+        android:title="고가"/>
+    <item
+        android:id="@+id/low_price"
+        android:title="저가"/>
+</menu>

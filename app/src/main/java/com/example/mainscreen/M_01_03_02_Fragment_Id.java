@@ -1,5 +1,7 @@
 package com.example.mainscreen;
 
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -13,7 +15,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import java.util.HashMap;
 
@@ -76,9 +77,13 @@ public class M_01_03_02_Fragment_Id extends Fragment {
             @Override
             public void onClick(View v) {
                 if(usernamePhone.get(edit_m_01_03_02_name.getText().toString()).equals(edit_m_01_03_02_phone.getText().toString())){
-                    //Dialog
+                    Found_ID_Dialog dialog = new Found_ID_Dialog(getActivity());
+                    dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+                    dialog.show();
                 } else {
-                    //Dialog
+                    Not_Found_ID_Dialog dialog = new Not_Found_ID_Dialog(getActivity());
+                    dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+                    dialog.show();
                 }
             }
         });
