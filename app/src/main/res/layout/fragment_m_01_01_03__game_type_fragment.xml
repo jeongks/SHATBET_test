@@ -1,10 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="268dp"
+    android:layout_height="80dp"
+    android:orientation="vertical"
+    android:layout_gravity="center"
     tools:context=".M_01_01_03_Fragment_game_type_fragment">
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/m_01_01_03_img1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   정가 \n 맞히기"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="10dp"
+            android:textSize="12dp"
+            android:textColor="#000000"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/m_01_01_03_img2"
+        android:layout_marginTop="-59dp"
+        android:layout_marginLeft="120dp"/>
 
 
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="120dp"
+            android:text="   구간 \n 맞히기"
+            android:textColor="#000000"
+            android:textSize="12dp"
+            android:layout_marginTop="10dp"/>
+
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="19dp"
+            android:layout_marginLeft="205dp"
+            android:layout_marginTop="-72dp"
+            android:background="@drawable/m_01_01_03_img3" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="202dp"
+            android:text="   로하이 \n  맞히기"
+            android:textColor="#000000"
+            android:textSize="12dp"
+            android:layout_marginTop="7dp"/>
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
 </FrameLayout>

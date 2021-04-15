@@ -10,7 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MainScreen">
         <activity android:name=".M_02_02_01"></activity>
-        <activity android:name=".M_02_02_03" />
         <activity android:name=".M_02_02_02" />
         <activity android:name=".M_01_02_05" />
         <activity android:name=".M_01_02_04" />
