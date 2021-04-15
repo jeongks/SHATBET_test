@@ -42,31 +42,5 @@ public class M_02_01_Game_Fragment_market_price extends Fragment {
         return view;
     }
 
-    @Override
-    public void onCreateContextMenu(@NonNull ContextMenu menu, @NonNull View v, @Nullable ContextMenu.ContextMenuInfo menuInfo) {
-        if (v.getId() == R.id.list_game_market_price){
-            ListView list_game_market_price = (ListView) v;
-            AdapterView.AdapterContextMenuInfo acmi = (AdapterView.AdapterContextMenuInfo) menuInfo;
-            M_02_01_List_Game_Market_Price game_market_price = (M_02_01_List_Game_Market_Price) list_game_market_price.getItemAtPosition(acmi.position);
 
-            menu.add("정가 맞히기");
-            menu.add("구간 맞히기");
-            menu.add("로하이 맞히기");
-            menu.add(game_market_price.getBrand_name());
-        }
-        super.onCreateContextMenu(menu, v, menuInfo);
-    }
-
-    @Override
-    public boolean onContextItemSelected(@NonNull MenuItem item) {
-        switch (item.getTitle().toString()){
-            case "정가 맞히기":
-                Intent intent = new Intent(getActivity(), Fragment_test.class);
-                startActivity(intent);
-                return true;
-            default:
-                return false;
-        }
-
-    }
 }
