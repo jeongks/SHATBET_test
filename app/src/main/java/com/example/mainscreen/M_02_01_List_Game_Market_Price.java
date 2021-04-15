@@ -1,10 +1,10 @@
 package com.example.mainscreen;
 
-public class List_Game_Market_Price {
+public class M_02_01_List_Game_Market_Price {
     private int brand_image;
     private String brand_name, game_type, price, shahbet_amount, total_participant;
 
-    public List_Game_Market_Price(int brand_image,String brand_name, String game_type, String price, String shahbet_amount, String total_participant){
+    public M_02_01_List_Game_Market_Price(int brand_image, String brand_name, String game_type, String price, String shahbet_amount, String total_participant){
         this.brand_image = brand_image;
         this.brand_name = brand_name;
         this.game_type = game_type;

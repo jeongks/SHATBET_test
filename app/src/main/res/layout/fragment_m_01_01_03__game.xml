@@ -80,7 +80,8 @@
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
-    <androidx.viewpager.widget.ViewPager
+    <FrameLayout
+        android:id="@+id/m_01_01_03_fragment_game_frame_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"/>

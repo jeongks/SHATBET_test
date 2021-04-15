@@ -12,18 +12,17 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import java.util.ArrayList;
-import java.util.concurrent.TimeoutException;
 
-public class List_Game_Market_Price_Adapter extends ArrayAdapter<List_Game_Market_Price> {
+public class M_02_01_List_Game_Market_Price_Adapter extends ArrayAdapter<M_02_01_List_Game_Market_Price> {
 
-    public List_Game_Market_Price_Adapter(@NonNull Context context, ArrayList<List_Game_Market_Price> lists) {
+    public M_02_01_List_Game_Market_Price_Adapter(@NonNull Context context, ArrayList<M_02_01_List_Game_Market_Price> lists) {
         super(context,0, lists);
     }
 
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-        List_Game_Market_Price list_market_price = getItem(position);
+        M_02_01_List_Game_Market_Price list_market_price = getItem(position);
         if(convertView == null){
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.list_game_market_price,parent,false);
         }
