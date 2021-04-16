@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:paddingHorizontal="30dp"
+    android:paddingVertical="10dp"
+    android:background="#fff"
+    android:gravity="center">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/like"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:text="배팅 완료 ! 적중을 기원합니다."/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sufficient_button"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:text="확인"
+        android:textSize="15sp"
+        android:textColor="#fff"
+        android:background="@drawable/small_dialog_0070c0_button"/>
+</LinearLayout>

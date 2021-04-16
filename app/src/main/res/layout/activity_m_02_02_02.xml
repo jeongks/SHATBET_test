@@ -222,7 +222,7 @@
             android:layout_width="160dp"
             android:layout_height="22dp"
             android:layout_marginLeft="139dp"
-            android:layout_marginTop="-3"
+            android:layout_marginTop="-3dp"
             android:background="#F1D8E1"
             android:paddingLeft="20dp"
             android:text="135,000 ~ 142,500"

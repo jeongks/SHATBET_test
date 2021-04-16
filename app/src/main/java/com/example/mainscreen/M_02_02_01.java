@@ -9,6 +9,6 @@ public class M_02_02_01 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_m_02_02_01);
+        setContentView(R.layout.fragment_m_02_02_game_concrete);
     }
 }

@@ -29,7 +29,7 @@ public class M_01_01_03_Fragment_home extends Fragment implements M_01_01_03_Fra
         //database에서 가져온 값들로 배열들을 생성해준다. 게임 카테고리 배열, 게임 종류 배열, 브랜드상표 배열, 브랜드이름 배열, 날짜 배열, 가격 배열
         addDataToList(data);
         int column_number = data.size();
-        horizontal_grid_view.setLayoutManager(new GridLayoutManager(getContext(),column_number / 2));
+        horizontal_grid_view.setLayoutManager(new GridLayoutManager(getContext(),column_number / 2+1));
         adapter = new M_01_01_03_Fragment_home_recycler_adapter(getContext(), data);
         adapter.setClickListener(this);
         horizontal_grid_view.setAdapter(adapter);

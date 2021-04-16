@@ -55,7 +55,7 @@ public class M_01_01_03_Fragment_home_recycler_adapter extends RecyclerView.Adap
         holder.text_m_01_01_03_brand_name.setText(data.get(position).getBrandname());
         holder.text_m_01_01_03_date.setText(data.get(position).getDate());
         holder.text_m_01_01_03_price.setText(data.get(position).getPrice());
-        holder.image_m_01_01_03_brand.setImageBitmap(getBitmap(data.get(position).getBrandImg()));
+        //holder.image_m_01_01_03_brand.setImageBitmap(getBitmap(data.get(position).getBrandImg()));
     }
     private Bitmap getBitmap(byte[] data){
         Bitmap bitmap = BitmapFactory.decodeByteArray(data,0,data.length);
@@ -64,7 +64,7 @@ public class M_01_01_03_Fragment_home_recycler_adapter extends RecyclerView.Adap
 
     @Override
     public int getItemCount() {
-        return categories.length;
+        return data.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{

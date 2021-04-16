@@ -6,6 +6,7 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.view.ContextMenu;
 import android.view.LayoutInflater;
@@ -38,7 +39,20 @@ public class M_02_01_Game_Fragment_market_price extends Fragment {
         game_market_price_list.add(game_market_price);
         adapter = new M_02_01_List_Game_Market_Price_Adapter(getContext(), game_market_price_list);
         list_game_market_price.setAdapter(adapter);
-        registerForContextMenu(list_game_market_price);
+        list_game_market_price.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                parent.setActivated(false);
+                view.setActivated(true);
+                M_01_01_03_Fragment_game_type_fragment fragment = new M_01_01_03_Fragment_game_type_fragment();
+                FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                transaction.setCustomAnimations(R.anim.slide_up,R.anim.slide_down);
+                transaction.add(R.id.m_01_01_03_fragment_game_frame_layout, fragment);
+                transaction.commit();
+            }
+        });
+
+
         return view;
     }
 

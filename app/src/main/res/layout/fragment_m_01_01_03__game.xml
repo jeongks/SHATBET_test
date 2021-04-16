@@ -8,6 +8,7 @@
 
 
     <LinearLayout
+        android:id="@+id/lucky_roulette_event"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#dae3f3"

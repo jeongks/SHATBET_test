@@ -130,7 +130,7 @@
             android:layout_height="wrap_content"
             android:padding="10dp"
             android:layout_marginLeft="20dp"
-            android:background="@drawable/bordor_no_radius_rectangle">
+            android:background="@drawable/border_no_radius_rectangle">
             <EditText
                 android:id="@+id/edit_high_bet_amount"
                 android:layout_width="wrap_content"

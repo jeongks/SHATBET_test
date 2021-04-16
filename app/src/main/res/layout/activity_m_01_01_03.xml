@@ -39,6 +39,17 @@
             android:background="@color/transparent"
             android:src="@drawable/ic_m_01_01_03_setting_50"/>
     </LinearLayout>
+    <FrameLayout
+        android:id="@+id/fragment_game_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:layout_marginTop="-30dp"/>
+    <FrameLayout
+        android:id="@+id/lucky_roulette_event_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"/>
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabs_m_01_01_03"
         android:layout_width="match_parent"
@@ -47,6 +58,7 @@
         android:id="@+id/view_pager_m_01_01_03"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
+
 
 
 </LinearLayout>

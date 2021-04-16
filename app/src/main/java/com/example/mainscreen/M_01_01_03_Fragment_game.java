@@ -11,12 +11,14 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 
 public class M_01_01_03_Fragment_game extends Fragment {
     ActionBar toolbar;
+    LinearLayout lucky_roulette_event;
     // TODO: Rename parameter arguments, choose names that match
 
     public M_01_01_03_Fragment_game() {
@@ -28,6 +30,13 @@ public class M_01_01_03_Fragment_game extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View game_view = inflater.inflate(R.layout.fragment_m_01_01_03__game, container, false);
+        lucky_roulette_event = (LinearLayout)game_view.findViewById(R.id.lucky_roulette_event);
+        lucky_roulette_event.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
         BottomNavigationView bottomNavigation = (BottomNavigationView)game_view.findViewById(R.id.bottom_navigation_game);
         bottomNavigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
