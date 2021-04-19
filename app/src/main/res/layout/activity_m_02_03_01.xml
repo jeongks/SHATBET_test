@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".m_02_03_01">
+
+    <LinearLayout
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="10dp"
+        android:background="#0070c0"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-9dp"
+            android:background="#0070c0"
+            android:paddingTop="10dp"
+            android:text="모든 샤베트 유저를 위한"
+            android:textColor="#ffffff"
+            android:textSize="17dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="딱 1명 무작위"
+            android:layout_marginTop="50dp"
+            android:textSize="27dp"
+            android:textColor="#0070c0"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="몰아주기 이벤트!"
+            android:textColor="#ED7D31"
+            android:textSize="42dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="86dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="60dp"
+            android:layout_height="10px"
+            android:background="#0070c0"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="155dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1일 1회 참여가능, 행운의 샤베트를 받아보세요!"
+            android:textColor="#0070c0"
+            android:layout_marginTop="-13dp"
+            android:layout_marginLeft="87dp"
+            android:textSize="13dp"/>
+
+
+        <View
+            android:layout_width="60dp"
+            android:layout_height="10px"
+            android:background="#0070c0"
+            android:layout_marginLeft="340dp"
+            android:layout_marginTop="-10dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Today's Game"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:layout_marginTop="180dp"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="292dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/m_02_03_01" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-15dp"
+            android:background="@drawable/m_02_03_01_2" />
+
+        <TextView
+            android:id="@+id/text_lucky_roulette_total_shahbet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="40,000"
+            android:textColor="#ffc000"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="-50dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="샤베트"
+            android:textColor="#ffc000"
+            android:textStyle="bold"
+            android:textSize="23dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="-15dp"/>
+
+        <TextView
+            android:id="@+id/text_lucky_roulette_total_participa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1,125명 참여 중"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="13dp"/>
+    </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_join_lucky_roulette"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_02_03_01"
+                android:layout_gravity="center"
+                android:text="게임 참여"
+                android:textStyle="bold"
+                android:textSize="23dp"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="당첨 발표까지"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="30dp"
+                android:textSize="19dp"/>
+
+
+            <TextView
+                android:id="@+id/lucky_roulette_Countdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="01:31:29"
+                android:layout_marginLeft="215dp"
+                android:textSize="19dp"
+                android:layout_marginTop="-27dp"
+                android:textStyle="bold"
+                android:textColor="#0070c0"/>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>
