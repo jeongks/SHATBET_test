@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".m_02_03_01">
+    tools:context=".M_02_03_01">
 
     <LinearLayout
         android:layout_width="347dp"
@@ -123,7 +123,6 @@
             android:id="@+id/text_lucky_roulette_total_shahbet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="40,000"
             android:textColor="#ffc000"
             android:textStyle="bold"
             android:textSize="25dp"
@@ -141,15 +140,25 @@
             android:layout_marginTop="-15dp"/>
 
         <TextView
-            android:id="@+id/text_lucky_roulette_total_participa"
+            android:id="@+id/text_lucky_roulette_total_participant"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1,125명 참여 중"
             android:textColor="#ffffff"
             android:textStyle="bold"
             android:textSize="15dp"
             android:layout_gravity="center"
-            android:layout_marginTop="13dp"/>
+            android:layout_marginTop="13dp"
+            android:layout_marginRight="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="명 참여 중"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="30dp"/>
     </FrameLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -165,7 +174,7 @@
                 android:text="게임 참여"
                 android:textStyle="bold"
                 android:textSize="23dp"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginTop="30dp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -178,12 +187,12 @@
                 android:layout_height="wrap_content"
                 android:text="당첨 발표까지"
                 android:layout_marginLeft="100dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="50dp"
                 android:textSize="19dp"/>
 
 
             <TextView
-                android:id="@+id/lucky_roulette_Countdown"
+                android:id="@+id/lucky_roulette_countdown"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="01:31:29"

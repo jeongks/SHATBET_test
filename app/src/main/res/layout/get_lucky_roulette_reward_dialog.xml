@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingVertical="10dp"
+    android:paddingHorizontal="10dp"
+    android:layout_gravity="center"
+    android:background="@drawable/border_dark_back_white_dialog"
+    android:outlineAmbientShadowColor="@color/transparent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="축하합니다!"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/text_total_shahbet_reward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="40000샤베트 당첨!"
+        android:textColor="#0070c0"
+        android:textSize="30sp"
+        android:layout_gravity="center"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_confirm_reward_dialog"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:text="확인"
+        android:textColor="#fff"
+        android:background="@drawable/button_shape_m_01_03_01_login"
+        android:layout_gravity="center"/>
+
+
+
+
+
+</LinearLayout>
